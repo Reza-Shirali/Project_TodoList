@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reza.Shirali | Todo List</title>
+    <link rel="stylesheet" href="./assets/styles/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Todo List</h2>
+      <div class="input__section">
+        <input
+          type="text"
+          class="task__input"
+          id="task__input"
+          placeholder="Add todo ..."
+        />
+        <input type="date" class="date__input" id="date__input" />
+        <button class="add__btn" id="add__btn">Add</button>
+        <button class="add__btn-edit" id="add__btn">Edit</button>
+      </div>
+      <div class="todo__operators">
+        <div class="todo__links">
+          <button class="filter__todos" data-filter="all">All</button>
+          <button class="filter__todos" data-filter="pending">Pending</button>
+          <button class="filter__todos" data-filter="completed">Completed</button>
+        </div>
+        <button class="delete__all-btn">Delete All</button>
+      </div>
+    </div>
+    <div class="alert__message"></div>
+    <div class="table__wrapper">
+      <table class="todo__table">
+        <thead class="table__header">
+          <tr class="table__row">
+            <th class="table__headers">Task</th>
+            <th class="table__headers">Date</th>
+            <th class="table__headers">Status</th>
+            <th class="table__headers">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="table__body"></tbody>
+      </table>
+    </div>
+    <script src="./assets/scripts/app.js"></script>
+  </body>
+</html>
